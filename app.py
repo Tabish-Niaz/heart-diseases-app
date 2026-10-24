@@ -9,6 +9,12 @@ hide_st_style = """
             #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
             header {visibility: hidden;}
+            
+            /* Bottom-right Creator Badge aur Icons ko hide karne ke liye */
+            [class^="viewerBadge_container"] {display: none !important;}
+            [class^="styles_viewerBadge"] {display: none !important;}
+            [class^="viewerBadge_link"] {display: none !important;}
+            [data-testid="stToolbar"] {display: none !important;}
             </style>
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
